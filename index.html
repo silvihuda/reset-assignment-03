@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,30 +9,85 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
         tailwind.config = {
-          theme: {
-            extend: {
-              colors: {
-                clifford: '#da373d',
-              }
+            theme: {
+                extend: {
+                    colors: {
+                        clifford: '#da373d',
+                    }
+                }
             }
-          }
         }
-      </script>
-      <!-- daisyUI cdn -->
-      <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.14/dist/full.min.css" rel="stylesheet" type="text/css" />
-      <script src="https://cdn.tailwindcss.com"></script>
-      <!-- font awesome cdn -->
-      <script src="https://kit.fontawesome.com/64f0e8001e.js" crossorigin="anonymous"></script>
+    </script>
+    <style>
+        .font-manrope {
+            font-family: "Manrope", serif;
+        }
+    </style>
+    <!-- daisyUI cdn -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.14/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- font awesome cdn -->
+    <script src="https://kit.fontawesome.com/64f0e8001e.js" crossorigin="anonymous"></script>
+    <!-- manrope font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
 </head>
-<body>
-  <header>
 
-  </header>  
-  <main>
+<body class="font-manrope">
+    <header class="container mx-auto overflow-x-hidden">
+        <!-- navbar -->
+        <div class="navbar bg-base-100">
+            <div class="navbar-start">
+                <a class="text-3xl font-extrabold">
+                    <i
+                        class="fa-solid fa-arrow-right w-10 h-10 bg-lime-300 rounded-full p-1 text-center -rotate-45"></i>
+                    Rinterio</a>
+            </div>
+            <div class="navbar-center hidden lg:flex">
+                <ul class="menu menu-horizontal px-1 ">
+                    <li><a class="font-bold">Home</a></li>
+                    <li><a>Services</a></li>
+                    <li><a>Portfolio</a></li>
+                    <li><a>Blogs</a></li>
+                    <li><a>Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="navbar-end lg:flex lg:space-x-5">
+                <div class="border-none rounded-full bg-gray-50 w-8 h-8 lg:flex justify-center items-center hidden ">
+                    <i class="fa-solid fa-magnifying-glass lg:inline-block"></i>
+                </div>
+                <div class="border-none rounded-full bg-gray-50 w-8 h-8 lg:flex justify-center items-center hidden">
+                    <i class="fa-solid fa-cart-shopping lg:inline-block"></i>
+                </div>
+                <button class="btn bg-lime-300 text-black rounded-full">Book Consult
+                    <div class="flex justify-center items-center w-8 h-8 bg-black text-white rounded-full -rotate-45"><i class="fa-solid fa-arrow-right"></i></div>
+                </button>
+                <div class="dropdown lg:hidden">
+                    <button tabindex="0" role="button" class="btn btn-ghost">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                            stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M4 6h16M4 12h8m-8 6h16" />
+                        </svg>
+                    </button>
+                    <ul tabindex="0" class="menu dropdown-content bg-base-100 rounded-box mt-3 shadow ">
+                        <li><a>Home</a></li>
+                        <li><a>Services</a></li>
+                        <li><a>Portfolio</a></li>
+                        <li><a>Blogs</a></li>
+                        <li><a>Contact Us</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
 
-  </main>
-  <footer>
-    
-  </footer>
+    </main>
+    <footer>
+
+    </footer>
 </body>
+
 </html>
